@@ -10,16 +10,37 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #f0f2f5;
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
 
 .container {
     text-align: center;
-    background-color: white;
+    background-color: var(--container-bg);
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
 }
+.dark-mode {
+    --bg-color: #1a202c;
+    --text-color: #e2e8f0;
+    --container-bg: #2d3748;
+    --input-border: #f3f5f7;
+    --post-bg: #d2d7e0;
+    --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+.dark-mode-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 5px;
+}
+
 
 h1 {
     color: #333;
